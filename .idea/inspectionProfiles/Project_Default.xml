@@ -1,0 +1,68 @@
+<component name="InspectionProjectProfileManager">
+  <profile version="1.0">
+    <option name="myName" value="Project Default" />
+    <inspection_tool class="PyPackageRequirementsInspection" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="ignoredPackages">
+        <value>
+          <list size="45">
+            <item index="0" class="java.lang.String" itemvalue="kount-ris-sdk" />
+            <item index="1" class="java.lang.String" itemvalue="python-binary-memcached" />
+            <item index="2" class="java.lang.String" itemvalue="python-crfsuite" />
+            <item index="3" class="java.lang.String" itemvalue="python-crontab" />
+            <item index="4" class="java.lang.String" itemvalue="django-localflavor" />
+            <item index="5" class="java.lang.String" itemvalue="types-pytz" />
+            <item index="6" class="java.lang.String" itemvalue="geocoder" />
+            <item index="7" class="java.lang.String" itemvalue="types-python-dateutil" />
+            <item index="8" class="java.lang.String" itemvalue="coreschema" />
+            <item index="9" class="java.lang.String" itemvalue="pyactiveresource" />
+            <item index="10" class="java.lang.String" itemvalue="shippo" />
+            <item index="11" class="java.lang.String" itemvalue="usaddress" />
+            <item index="12" class="java.lang.String" itemvalue="sentry-sdk" />
+            <item index="13" class="java.lang.String" itemvalue="django-db-geventpool" />
+            <item index="14" class="java.lang.String" itemvalue="django-model-utils" />
+            <item index="15" class="java.lang.String" itemvalue="usaddress-scourgify" />
+            <item index="16" class="java.lang.String" itemvalue="django-waffle" />
+            <item index="17" class="java.lang.String" itemvalue="uszipcode" />
+            <item index="18" class="java.lang.String" itemvalue="python-jose" />
+            <item index="19" class="java.lang.String" itemvalue="fuzzywuzzy" />
+            <item index="20" class="java.lang.String" itemvalue="sqlalchemy-mate" />
+            <item index="21" class="java.lang.String" itemvalue="psycogreen" />
+            <item index="22" class="java.lang.String" itemvalue="python-stdnum" />
+            <item index="23" class="java.lang.String" itemvalue="shortid" />
+            <item index="24" class="java.lang.String" itemvalue="dj-database-url" />
+            <item index="25" class="java.lang.String" itemvalue="django-model-choices" />
+            <item index="26" class="java.lang.String" itemvalue="probableparsing" />
+            <item index="27" class="java.lang.String" itemvalue="django-auditlog" />
+            <item index="28" class="java.lang.String" itemvalue="types-requests" />
+            <item index="29" class="java.lang.String" itemvalue="pdfrw" />
+            <item index="30" class="java.lang.String" itemvalue="ratelim" />
+            <item index="31" class="java.lang.String" itemvalue="yaml-config" />
+            <item index="32" class="java.lang.String" itemvalue="django-pipeline" />
+            <item index="33" class="java.lang.String" itemvalue="django-bmemcached" />
+            <item index="34" class="java.lang.String" itemvalue="coreapi" />
+            <item index="35" class="java.lang.String" itemvalue="django-fsm" />
+            <item index="36" class="java.lang.String" itemvalue="django-sendgrid-v5" />
+            <item index="37" class="java.lang.String" itemvalue="itypes" />
+            <item index="38" class="java.lang.String" itemvalue="python-decouple" />
+            <item index="39" class="java.lang.String" itemvalue="pathlib-mate" />
+            <item index="40" class="java.lang.String" itemvalue="pytz" />
+            <item index="41" class="java.lang.String" itemvalue="klaviyo" />
+            <item index="42" class="java.lang.String" itemvalue="shopifyapi" />
+            <item index="43" class="java.lang.String" itemvalue="types-mock" />
+            <item index="44" class="java.lang.String" itemvalue="types-urllib3" />
+          </list>
+        </value>
+      </option>
+    </inspection_tool>
+    <inspection_tool class="PyUnresolvedReferencesInspection" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="ignoredIdentifiers">
+        <list>
+          <option value="object.initialize_request" />
+          <option value="object.finalize_response" />
+          <option value="list.__or__" />
+          <option value="bytes.read" />
+        </list>
+      </option>
+    </inspection_tool>
+  </profile>
+</component>
