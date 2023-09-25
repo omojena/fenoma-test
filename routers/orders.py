@@ -10,6 +10,14 @@ from models.order import OrderResponse
 router = APIRouter(prefix='/orders', tags=['Orders'])
 
 
+@router.post("/solution", response_model=None)
+async def solution_order(payload: Dict[str, Any]):
+    orders = payload["orders"]
+    criterion = payload["criterion"]
+    result = solution_orders(orders, criterion)
+    return JSONResponse(result)
+
+
 @router.get("/")
 async def fetch_orders():
     return get_orders()
@@ -33,14 +41,6 @@ async def edit_order(order_id: int, order: OrderResponse) -> dict:
 @router.patch("/{order_id}")
 async def remove_order(order_id: int) -> dict:
     return delete_order(order_id)
-
-
-@router.post("/solution", response_model=None)
-async def solution_order(payload: Dict[str, Any]):
-    orders = payload["orders"]
-    criterion = payload["criterion"]
-    result = solution_orders(orders, criterion)
-    return JSONResponse(result)
 
 
 @router.post("/solution/crud", response_model=None)
