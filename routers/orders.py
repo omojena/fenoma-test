@@ -38,7 +38,7 @@ async def edit_order(order_id: int, order: OrderResponse) -> dict:
     return update_order(order_id, order)
 
 
-@router.patch("/{order_id}")
+@router.delete("/{order_id}")
 async def remove_order(order_id: int) -> dict:
     return delete_order(order_id)
 

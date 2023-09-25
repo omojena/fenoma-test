@@ -1,7 +1,15 @@
+from enum import Enum
+
 from pydantic import BaseModel
 
 from database.database import Base, engine
-from sqlalchemy import Column, Integer, String, Float
+from sqlalchemy import Column, Integer, String, Float, Enum as EnumColumn
+
+
+class OrderStatus(str, Enum):
+    PENDING = "pending"
+    COMPLETED = "completed"
+    CANCELED = "canceled"
 
 
 class Order(Base):
@@ -11,7 +19,7 @@ class Order(Base):
     item = Column(String)
     quantity = Column(Integer)
     price = Column(Float)
-    status = Column(String)
+    status = Column(EnumColumn(OrderStatus))
 
 
 class OrderResponse(BaseModel):
@@ -19,7 +27,7 @@ class OrderResponse(BaseModel):
     item: str
     quantity: int
     price: float
-    status: str
+    status: OrderStatus
 
 
 Base.metadata.create_all(engine)
