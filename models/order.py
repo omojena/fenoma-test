@@ -14,14 +14,8 @@ class Order(Base):
     status = Column(String)
 
 
-class CreateOrderRequest(BaseModel):
-    item: str
-    quantity: int
-    price: float
-    status: str
-
-
-class UpdateOrderRequest(BaseModel):
+class OrderResponse(BaseModel):
+    id: int
     item: str
     quantity: int
     price: float
