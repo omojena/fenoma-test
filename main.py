@@ -1,13 +1,12 @@
 from fastapi import FastAPI
+from routers import orders
 
-app = FastAPI()
+app = FastAPI(title="Management Orders",
+              description="Api for managing orders",
+              summary="",
+              version="0.0.1",
+              contact={
+                  "email": "osmel.dubet@gmail.com",
+              },)
 
-
-@app.get("/")
-async def root():
-    return {"message": "Hello World"}
-
-
-@app.get("/hello/{name}")
-async def say_hello(name: str):
-    return {"message": f"Hello {name}"}
+app.include_router(orders.router)
