@@ -19,7 +19,7 @@ class Order(Base):
     item = Column(String)
     quantity = Column(Integer)
     price = Column(Float)
-    status = Column(EnumColumn(OrderStatus))
+    status = Column(String)
 
 
 class OrderResponse(BaseModel):
