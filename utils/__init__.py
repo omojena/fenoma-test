@@ -1,9 +1,9 @@
 from typing import List, Dict
 
-from models.order import Order
+from models.order import OrderResponse
 
 
-def valid_orders_crud(orders: list[Order]) -> bool:
+def valid_orders_crud(orders: List[OrderResponse]) -> bool:
     for order_data in orders:
         price = order_data.price
         quantity = order_data.quantity
