@@ -1,13 +1,14 @@
 from fastapi import FastAPI
+from routers import orders
+import redis
 
-app = FastAPI()
+app = FastAPI(title="Management Orders",
+              description="Api for management orders",
+              summary="",
+              version="0.0.1",
+              contact={
+                  "email": "osmel.dubet@gmail.com",
+              },)
 
-
-@app.get("/")
-async def root():
-    return {"message": "Hello World"}
-
-
-@app.get("/hello/{name}")
-async def say_hello(name: str):
-    return {"message": f"Hello {name}"}
+app.include_router(orders.router)
+redis_client = redis.Redis(host='localhost', port=6379)
